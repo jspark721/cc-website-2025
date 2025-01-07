@@ -11,6 +11,7 @@ html {
 body {
   margin: 0;
   overflow: hidden;
+  background-color: $white;
 }
 
 h1 {
@@ -129,7 +130,7 @@ p {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: marquee 40s linear infinite;
+  animation: marquee 50s linear infinite;
 }
 
 .ticker p {
@@ -137,7 +138,7 @@ p {
   font-family: $subheading;
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
+  color: $white;
   font-size: 2.3rem;
   margin: .8rem 0 .5rem 0;
 }
@@ -145,9 +146,11 @@ p {
 @keyframes marquee {
   0% {
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
   100% {
     transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
   }
 }
 
@@ -181,7 +184,9 @@ p {
     transition: .3s ease;
   }
 }
-
+.home-work-img-mobile {
+  display: none;
+}
 .work-item-1 {
   grid-column-start: 1;
   grid-row-start: 1;
@@ -371,7 +376,7 @@ textarea {
 [type="submit"] {
   background:$teal;
   cursor:pointer;
-  color:white;
+  color:$white;
   font-size:1.7rem;
   padding: 15px 40px;
   transition: all 0.3s;
@@ -388,14 +393,14 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   p {
-    color: white;
+    color:$white;
     text-transform: uppercase;
     font-size: 1.8rem;
     text-align: center;
     font-weight: 500;
   }
   a {
-    color: white;
+    color:$white;
   }
 }
 
@@ -487,7 +492,7 @@ textarea {
 .dh-services-item {
   padding: 3rem;
   text-align: center;
-  color: white;
+  color: $white;
   border-radius: 20px;
   img {
     width: 95%;
@@ -589,6 +594,7 @@ textarea {
   justify-items: center;
 }
 .dh-shorty-award {
+  align-self: center;
   img {
     max-width: 400px;
     margin-bottom: 20px;
@@ -603,7 +609,10 @@ textarea {
   }
 }
 .dh-short-award-video {
-  border: 1px solid gray;
+  width: 100%;
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 //  META LANDING PAGE
@@ -611,7 +620,7 @@ textarea {
 .meta-page {
   background-color: $light;
   .navbar {
-    background-color: white;
+    background-color: $white;
   }
 }
 
@@ -730,7 +739,9 @@ textarea {
   max-height: 1200px;
   margin-bottom: -6px;
 }
-
+.ch-hero-img-mobile {
+  display: none;
+}
 .ch-hero-title {
   color: $blue;
   font-size: 11rem;
@@ -747,7 +758,7 @@ textarea {
   .meta-creative-desc {
     background-color: $orange;
     border: none;
-    color: white;
+    color: $white;
     margin-top: 30px;
   }
 }
@@ -883,6 +894,11 @@ textarea {
   .ch-results-container .services-grid-item h3 {
     font-size: 2.5rem;
   }
+  .dh-short-award-video {
+    iframe {
+      height: 600px;
+    }
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -981,6 +997,11 @@ textarea {
       }
     }
   }
+  .dh-short-award-video {
+    iframe {
+      height: 500px;
+    }
+  }
   .meta-creative-desc, .meta-production-desc {
     padding: 1rem;
   }
@@ -1047,6 +1068,11 @@ textarea {
     h5{
       font-size: 1.8rem;
       line-height: 2rem;
+    }
+  }
+  .dh-short-award-video {
+    iframe {
+      height: 400px;
     }
   }
   .meta-hero-text-container {
@@ -1178,6 +1204,17 @@ textarea {
   .dh-rankings-container {
     margin-top: 3%;
   }
+  .dh-shorty-award {
+    text-align: center;
+    img {
+      max-width: 200px;
+    }
+  }
+  .dh-short-award-video {
+    iframe {
+      height: 300px;
+    }
+  }
   .meta-hero-image {
     margin-left: 0;
   }
@@ -1265,6 +1302,7 @@ textarea {
   }
   .dh-shorty-award {
     text-align: center;
+    margin-top: 5%;
     img {
       max-width: 200px;
     }
@@ -1274,6 +1312,15 @@ textarea {
   }
   .dh-hero-container {
     padding-top: 8%;
+  }
+  .dh-shorty-award-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .dh-short-award-video {
+    iframe {
+      height: 400px;
+    }
   }
   .meta-hero-img {
     max-height: 600px;
@@ -1329,6 +1376,7 @@ textarea {
   }
   .contact-form {
     width: 90%;
+    margin-left: 5%;
   }
   .contact-img {
     margin-top: 0;
@@ -1405,6 +1453,11 @@ textarea {
       height: 300px;
     }
   }
+  .dh-short-award-video {
+    iframe {
+      height: 300px;
+    }
+  }
   .meta-creative-title {
     display: block;
   }
@@ -1439,12 +1492,20 @@ textarea {
   .ch-hero-image {
     text-align: center;
     width: 100%;
-    padding-top: 45%;
+    padding-top: 55%;
   }
   .meta-hero-text-container {
     position: absolute; 
     top: 5%;
     width: 80%;
+  }
+  .ch-hero-img {
+    display: none;
+  }
+  .ch-hero-img-mobile {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
   }
   .ch-hero-text-container {
     position: absolute;
@@ -1464,19 +1525,32 @@ textarea {
 }
 
 @media screen and (max-width: 515px) {
+  .ticker p {
+    font-size: 1.3rem;
+    margin: 0.3rem 0 0rem 0;
+  }
   .work-title-mobile {
     padding-right: 5%;
   }
   .work-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-work-img-desktop {
+    display: none;
+  }
+  .home-work-img-mobile {
     display: block;
+    border-radius: 30px;
   }
   .work-item-3 {
     padding-left: 0;
-    margin: 5%;
+    margin: 0 5%;
+    order: 3;
   }
   .work-item-1, .work-item-4 {
     padding-right: 0;
-    margin: 5%;
+    margin: 0 5%;
   }
   .work-orange-lines {
     display: none;
@@ -1521,11 +1595,18 @@ textarea {
   }
   .dh-services-podcast-video {
     iframe {
-      height: 250px;
+      height: 220px;
     }
   }
-  .dh-shorty-award-container {
-    display: block;
+  .dh-short-award-video {
+    iframe {
+      height: 220px;
+    }
+  }
+  .dh-shorty-award {
+    img {
+      max-width: 150px;
+    }
   }
   .meta-hero-image {
     padding-top: 40%;
@@ -1541,12 +1622,15 @@ textarea {
   .meta-creative-title {
     text-align: center;
   }
+  .meta-education-container .meta-creative-title h1 {
+    width: auto;
+  }
   .meta-creative-desc, .meta-production-desc {
     margin: 0 5%;
     padding: 1rem;
   }
   .ch-hero-image {
-    padding-top: 55%;
+    padding-top: 65%;
   }
   .ch-results-container .services-grid {
     grid-template-columns: 1fr;
@@ -1572,16 +1656,33 @@ textarea {
 }
 
 @media screen and (max-width: 435px) {
-  .dh-hero-body {
-    width: 45%;
-  }
   .dh-hero-container {
-    padding-top: 40%;
+    padding-top: 45%;
   }
   .dh-services-grid {
     padding: 0 15%;
   }
   .ch-hero-image {
-    padding-top: 68%;
+    padding-top: 75%;
+  }
+  .dh-services-title {
+    h1 {
+      margin-top: 10%;
+    }
+  }
+  .meta-hero-image {
+    padding-top: 55%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dh-hero-container {
+    padding-top: 55%;
+  }
+  .dh-hero-body {
+    width: 60%;
+  }
+  .ch-hero-image {
+    padding-top: 85%;
   }
 }
