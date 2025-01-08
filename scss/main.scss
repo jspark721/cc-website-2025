@@ -33,6 +33,15 @@ h3 {
   line-height: 2.5rem;
 }
 
+h5 {
+  font-family: $subheading;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 1rem 1rem 0 1rem;
+}
+
 p {
   font-family: $body;
   font-weight: 300;
@@ -120,6 +129,13 @@ p {
   border-radius: 7em;
 }
 
+#hero-video-mobile {
+  display: none;
+  width: 90%;
+  padding: 0 5% 6% 5%;
+  border-left: 0 solid transparent;
+  border-radius: 5em;
+}
 
 .ticker-container {
   max-width: 100%;
@@ -130,7 +146,17 @@ p {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: marquee 50s linear infinite;
+  animation-name: marquee;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-direction: normal;
+  -webkit-animation-name: marquee;
+  -webkit-animation-duration: 60s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
 }
 
 .ticker p {
@@ -429,6 +455,134 @@ textarea {
   padding-right: 15%;
 }
 
+//ABOUT PAGE 
+
+.about-hero-container {
+  position: relative;
+  width: 100vw;
+  background-color: $white;
+  display: flex;
+  max-width: 2000px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.about-hero-text {
+  padding: 5% 0 0 5%;
+  width: 35%;
+  margin-left: 8%;
+  h1 {
+    margin-top: 20%;
+    font-size: 10rem;
+    line-height: 8.5rem;
+  }
+  p {
+    margin: 5%;
+    max-width: 500px;
+  }
+}
+.about-hero-image {
+  width: 65%;
+  padding: 5% 0;
+  text-align: center;
+  img {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+.about-main-container {
+  position: relative;
+  width: 100vw;
+  background-color: $white;
+  display: flex;
+  max-width: 2000px;
+  margin: 0 auto;
+  .about-hero-text {
+    max-width: 550px;
+    padding: 5%;
+    margin-top: 5%;
+    h1 {
+      margin: 5% 5% 8% 5%;
+    }
+    p {
+      margin-top: 5%;
+    }
+  }
+}
+
+.about-diversity-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15%;
+}
+.about-diversity-image {
+  width: 40%;
+  img {
+    width: 100%;
+  }
+}
+.about-diversity-text {
+  width: 35%;
+  border: 1px solid $blue;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  max-width: 700px;
+  h3 {
+    font-size: 6rem;
+    margin: 0;
+    line-height: 3.5rem;
+    span {
+      font-size: 2.5rem;
+      margin-left: 5px;
+    }
+  }
+  h6 {
+    font-family: $body;
+    text-transform: uppercase;
+    color: $orange;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+}
+
+.about-ceo-container {
+  padding: 5% 5% 3% 5%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-ceo {
+  max-width: 500px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  img {
+    width: 100%;
+  }
+}
+.about-p {
+  margin: 0 0 0 1rem;
+  font-weight: 600;
+}
+
+.coop-grid {
+  max-width: 1800px;
+  width: 80vw;
+  padding: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 4rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+.coop-item {
+  justify-self: center;
+  img {
+    width: 100%;
+  }
+}
 
 // DEAR HOLLYWOOD 
 
@@ -839,7 +993,47 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1950px) {
+  .about-hero-text {
+    width: 45%;
+    h1 {
+      font-size: 8rem;
+      line-height: 7rem;
+    }
+  }
+  .about-main-container {
+    .about-hero-text {
+      width: 60%;
+      h1 {
+        font-size: 8rem;
+      }
+    }
+  }
+  .about-ceo-container {
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 1750px) {
+  .about-hero-text {
+    padding: 5% 0;
+  }
+  .about-hero-image {
+    width: 55%;
+    padding-right: 8%;
+  }
+  .about-main-container .about-hero-text {
+    padding: 5% 0;
+  }
+  .about-ceo-container {
+    width: 50%;
+  }
+  .about-ceo {
+    max-width: 400px;
+  }
+  .coop-grid {
+    column-gap: 2rem;
+  }
   .work-item-2 {
     h1 {
       font-size: 9rem;
@@ -942,6 +1136,12 @@ textarea {
       font-size: 1.4rem;
     }
   }
+  .about-diversity-image {
+    width: 35%;
+  }
+  .coop-item {
+    padding: 0 1rem;
+  }
   .dh-hero-title {
     font-size: 8rem;
     line-height: 7rem;
@@ -1028,6 +1228,33 @@ textarea {
 }
 
 @media screen and (max-width: 1290px) {
+  .about-hero-container {
+    margin-bottom: 8%;
+  }
+  .about-hero-text {
+    width: 55%;
+  }
+  .about-hero-image {
+    width: 45%;
+  }
+  .about-main-container .about-hero-text {
+    width: 45%;
+  }
+  .about-hero-text, .about-diversity-container {
+    margin-left: 5%;
+  }
+  .about-ceo-container {
+    width: 40%;
+  }
+  .about-ceo {
+    max-width: 350px;
+  }
+  .coop-grid {
+    row-gap: 3rem;
+  }
+  .coop-item {
+    padding: 0;
+  }
   .work-item-2 {
     h1 {
       font-size: 7rem;
@@ -1121,6 +1348,62 @@ textarea {
 //TABLET
 
 @media screen and (max-width: 1024px) {
+  #about-page {
+    h5 {
+      font-size: 1.7rem;
+      margin: 0 0 0 .5rem;
+    }
+  }
+  .about-p {
+    font-size: 1.2rem;
+    margin: 0 0 0 .5rem;
+  }
+  .about-hero-text {
+    width: 50%;
+    h1 {
+      font-size: 6rem;
+      line-height: 5rem;
+    }
+  }
+  .about-main-container .about-hero-text h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+  .about-hero-image {
+    padding-right: 5%;
+    width: 50%;
+  }
+  .about-ceo-container {
+    width: 35%;
+  }
+  .about-ceo {
+    max-width: 280px;
+  }
+  .about-main-container .about-hero-text {
+    width: 60%;
+  }
+  .about-diversity-container {
+    margin-top: 8%;
+    justify-content: flex-start;
+  }
+  .about-diversity-text {
+    width: 35%;
+    margin-left: 10%;
+    h3 {
+      font-size: 4rem;
+      line-height: 2.5rem;
+      span {
+        font-size: 2rem;
+      }
+    }
+    h6 {
+      font-size: 1.2rem;
+    }
+  }
+  .coop-grid {
+    width: 90vw;
+    padding: 10% 5%;
+  }
   .clients-grid-container {
     margin-top: 30px;
   }
@@ -1270,6 +1553,9 @@ textarea {
     margin-bottom: 7px;
     height: 3px;
   }
+  .about-hero-text h1 {
+    margin-top: 10%;
+  }
   .work-item-2 h1, .clients-title, .services-title, .contact-title {
       font-size: 4.5rem;
       line-height: 4rem;
@@ -1353,6 +1639,57 @@ textarea {
 }
 
 @media screen and (max-width: 650px) {
+  .about-hero-container {
+    display: block;
+  }
+  .about-hero-text {
+    width: 70%;
+    padding: 0;
+  }
+  .about-hero-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about-main-container {
+    display: block;
+    .about-hero-text {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  .about-ceo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    column-gap: 2rem;
+    align-items: flex-start;
+  }
+  .about-diversity-text h3 {
+    font-size: 3rem;
+    line-height: 2rem;
+    span {
+      font-size: 1.6rem;
+      margin-left: 0;
+    }
+  }
+  .about-diversity-text h6 {
+    font-size: 1rem;
+  }
+  #about-page h5 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-top: 5px;
+  }
+  .about-p {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 6px;
+  }
+  .coop-grid {
+    width: 80vw;
+    grid-template-columns: 1fr 1fr;
+  }
   .work-item-2 {
     display: none;
   }
@@ -1525,6 +1862,12 @@ textarea {
 }
 
 @media screen and (max-width: 515px) {
+  #hero-video-mobile {
+    display: block;
+  }
+  #hero-video {
+    display: none;
+  }
   .ticker p {
     font-size: 1.3rem;
     margin: 0.3rem 0 0rem 0;
@@ -1542,6 +1885,15 @@ textarea {
   .home-work-img-mobile {
     display: block;
     border-radius: 30px;
+  }
+  .about-hero-text {
+    width: 90%;
+  }
+  .about-ceo-container {
+    width: 90%;
+  }
+  .coop-grid {
+    width: 90vw;
   }
   .work-item-3 {
     padding-left: 0;
