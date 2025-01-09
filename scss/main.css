@@ -134,7 +134,7 @@ p {
 .nav--open {
   height: 100vh;
   width: 450px;
-  background: #fe8701;
+  background: #fafafa;
   transition: all 0.5s ease-out;
   opacity: 1;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
@@ -165,7 +165,7 @@ p {
   text-align: right;
   padding: 5%;
   font-size: 2.3em;
-  color: #fafafa;
+  color: #fe8701;
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-weight: 800;
 }
@@ -185,7 +185,7 @@ p {
   font-weight: 700;
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   padding: 15px 0;
-  color: #fafafa;
+  color: #fe8701;
   text-transform: uppercase;
 }
 .nav--open-menu a:hover {
