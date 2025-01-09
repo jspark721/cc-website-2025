@@ -82,10 +82,14 @@ p {
 .navbar {
   background-color: #fafafa;
   width: 100vw;
-  height: 120px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.navshadow {
+  box-shadow: 2px 2px 15px rgba(122, 122, 122, 0.2);
 }
 
 .logo-main {
@@ -206,6 +210,7 @@ p {
 .hero-container {
   position: relative;
   width: 100vw;
+  margin-top: 100px;
 }
 
 .hero-video-container {
@@ -215,7 +220,7 @@ p {
 
 #hero-video {
   width: 92%;
-  padding: 5px 4% 4% 4%;
+  padding: 0 4% 4% 4%;
   border-left: 0 solid transparent;
   border-radius: 7em;
 }
@@ -578,7 +583,7 @@ textarea {
   background-color: #fafafa;
   display: flex;
   max-width: 2000px;
-  margin: 0 auto;
+  margin: 100px auto 0 auto;
   justify-content: center;
 }
 
@@ -711,6 +716,7 @@ textarea {
   position: relative;
   width: 100vw;
   background-color: #ebeef3;
+  margin-top: 100px;
 }
 
 .alyson-hero-img {
@@ -909,7 +915,7 @@ textarea {
   background-color: #ebeef3;
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin: 100px auto 0 auto;
   max-width: 1800px;
 }
 
@@ -1857,6 +1863,23 @@ textarea {
   }
 }
 @media screen and (max-width: 600px) {
+  .navbar {
+    height: 80px;
+  }
+  .cc-logo {
+    max-width: 200px;
+  }
+  .menubox {
+    width: 35px;
+    height: 35px;
+  }
+  .menu-lines {
+    width: 30px;
+    height: 30px;
+  }
+  .hero-container {
+    margin-top: 80px;
+  }
   .meta-hero-container {
     display: block;
   }
