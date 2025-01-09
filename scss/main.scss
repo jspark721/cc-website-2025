@@ -227,7 +227,7 @@ p {
   border: 0;
   padding: 10px;
   cursor: pointer;
-  color: $orange;
+  color: $black;
   outline: 0;
   text-transform: uppercase;
   font-size: 0.75em;
@@ -1970,6 +1970,9 @@ textarea {
   }
   #hero-video {
     display: none;
+  }
+  #video-btn {
+    padding: 3px;
   }
   .ticker p {
     font-size: 1.3rem;
