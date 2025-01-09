@@ -80,6 +80,7 @@ p {
 }
 
 .navbar {
+  background-color: #fafafa;
   width: 100vw;
   height: 120px;
   display: flex;
@@ -96,22 +97,30 @@ p {
   max-width: 300px;
 }
 
+.sticky {
+  position: fixed;
+  z-index: 10;
+}
+
 .menubox {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   margin-right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.menubox:hover {
+  cursor: pointer;
+}
 
 .menu-lines {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 .top-line {
-  margin-top: 8px;
+  margin-top: 2px;
 }
 
 .menu-line {
@@ -120,6 +129,78 @@ p {
   margin-bottom: 8px;
   border-radius: 15px;
   background-color: black;
+}
+
+.nav--open {
+  height: 100vh;
+  width: 450px;
+  background: #fe8701;
+  transition: all 0.5s ease-out;
+  opacity: 1;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  top: 0;
+  right: 0;
+}
+
+.nav-title {
+  font-family: "Sofia Sans", serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.nav--sub-list {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  margin-bottom: 8px;
+}
+.nav--sub-list span {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 0 5px;
+}
+
+.nav--close-icon {
+  text-align: right;
+  padding: 5%;
+  font-size: 2.3em;
+  color: #fafafa;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-weight: 800;
+}
+.nav--close-icon:hover {
+  cursor: pointer;
+}
+
+.nav--open-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+}
+.nav--open-menu a {
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  padding: 15px 0;
+  color: #fafafa;
+  text-transform: uppercase;
+}
+.nav--open-menu a:hover {
+  color: #3b39ff;
+  transition: all 0.3s ease;
+}
+
+.close {
+  transform: translateX(500px);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+}
+
+.nav-work-link {
+  font-size: 1.5rem !important;
 }
 
 .hero-container {
@@ -1801,6 +1882,9 @@ textarea {
   }
 }
 @media screen and (max-width: 515px) {
+  .nav--open {
+    width: 100%;
+  }
   #hero-video-mobile {
     display: block;
   }

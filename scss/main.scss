@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 ::-webkit-scrollbar {
   display: none;
@@ -67,9 +67,11 @@ p {
 .teal-text {
   color: $teal;
 }
+
 //NAVIGAION
 
 .navbar {
+  background-color: $white;
   width: 100vw;
   height: 120px;
   display: flex;
@@ -85,21 +87,28 @@ p {
   width: 100%;
   max-width: 300px;
 }
+.sticky {
+  position: fixed;
+  z-index: 10;
+}
 
 .menubox {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   margin-right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+    &:hover {
+    cursor: pointer;
+  }
 }
 .menu-lines {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 .top-line {
-  margin-top: 8px;
+  margin-top: 2px;
 }
 
 .menu-line {
@@ -108,6 +117,79 @@ p {
   margin-bottom: 8px;
   border-radius: 15px;
   background-color: black;
+}
+
+
+//navigation open
+
+.nav--open {
+  height: 100vh;
+  width: 450px;
+  background: $orange;
+  transition: $ease-slow;
+  opacity: 1;
+  box-shadow: 2px 2px 15px rgba($black, .1);
+  top: 0;
+  right: 0;
+}
+
+.nav-title {
+  font-family: $body;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.nav--sub-list {
+  font-family: $heading;
+  margin-bottom: 8px;
+  span {
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 0 5px;
+  }
+}
+
+.nav--close-icon {
+  text-align: right;
+  padding: 5%;
+  font-size: 2.3em;
+  color: $white;
+  font-family: $heading;
+  font-weight: 800;
+    &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav--open-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+  a {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: $heading;
+    padding: 15px 0;
+    color: $white;
+    text-transform: uppercase;
+    &:hover {
+      color: $blue;
+      transition: $ease;
+    }
+  }
+}
+
+.close {
+  transform: translateX(500px);
+  transition: $ease-slow;
+  opacity: 0;
+}
+.nav-work-link {
+  font-size: 1.5rem !important;
 }
 
 //HERO SECTION
@@ -1862,6 +1944,9 @@ textarea {
 }
 
 @media screen and (max-width: 515px) {
+  .nav--open {
+    width: 100%;
+  }
   #hero-video-mobile {
     display: block;
   }

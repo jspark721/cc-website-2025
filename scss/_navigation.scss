@@ -1,5 +1,10 @@
 @import 'variables';
 
+a, .nav-title {
+  font-family: $heading;
+  text-transform: uppercase;
+}
+
 #menu--box {
   position: fixed;
   z-index: 10;
@@ -25,18 +30,6 @@
   background: $orange;
 }
 
-.menu-box-pink {
-  background: $pink;
-}
-.menu-box-red {
-  background: $red;
-}
-.menu-box-yellow {
-  background: $yellow;
-}
-.menu-box-teal {
-  background: $teal;
-}
 
 .menu--icon {
   position: relative;
@@ -138,7 +131,7 @@
     margin-top: 10px;
     color: $white;
     &:hover {
-      color: $yellow;
+      color: $teal;
     }
   }
 }
@@ -155,11 +148,11 @@
   }
 }
 .nav-title {
-  color: $yellow;
+  color: $teal;
 }
 .icon-sm {
   font-size: 0.5em;
-  color: $redorange;
+  color: $blue;
   cursor: pointer;
   transition: $ease;
   &:hover {
