@@ -604,12 +604,12 @@ textarea {
 
 .about-hero-image {
   width: 65%;
-  padding: 5% 0;
+  padding-bottom: 5%;
   text-align: center;
 }
 .about-hero-image img {
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 .about-main-container {
@@ -698,8 +698,7 @@ textarea {
   padding: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   row-gap: 4rem;
   justify-content: center;
   margin: 0 auto;
@@ -1120,7 +1119,7 @@ textarea {
 }
 @media screen and (max-width: 1950px) {
   .about-hero-text {
-    width: 45%;
+    width: 35%;
   }
   .about-hero-text h1 {
     font-size: 8rem;
@@ -1141,6 +1140,9 @@ textarea {
   .about-hero-text {
     padding: 5% 0;
   }
+  .about-hero-text h1 {
+    margin-right: 0;
+  }
   .about-hero-image {
     width: 55%;
     padding-right: 8%;
@@ -1155,8 +1157,7 @@ textarea {
     max-width: 400px;
   }
   .coop-grid {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 2rem;
   }
   .work-item-2 h1 {
     font-size: 9rem;
@@ -1713,8 +1714,7 @@ textarea {
     grid-template-columns: 1fr 1fr;
     width: 80%;
     margin: 0 auto;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 2rem;
     align-items: flex-start;
   }
   .about-diversity-text h3 {

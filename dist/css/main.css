@@ -604,7 +604,7 @@ textarea {
 
 .about-hero-image {
   width: 65%;
-  padding: 5% 0;
+  padding-bottom: 5%;
   text-align: center;
 }
 .about-hero-image img {

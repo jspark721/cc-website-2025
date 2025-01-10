@@ -586,11 +586,11 @@ textarea {
 }
 .about-hero-image {
   width: 65%;
-  padding: 5% 0;
+  padding-bottom: 5%;
   text-align: center;
   img {
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
   }
 }
 
@@ -1100,7 +1100,7 @@ textarea {
 
 @media screen and (max-width: 1950px) {
   .about-hero-text {
-    width: 45%;
+    width: 35%;
     h1 {
       font-size: 8rem;
       line-height: 7rem;
