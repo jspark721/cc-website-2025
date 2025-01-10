@@ -1125,6 +1125,7 @@ textarea {
   .about-hero-text h1 {
     font-size: 8rem;
     line-height: 7rem;
+    margin-right: 15%;
   }
   .about-main-container .about-hero-text {
     width: 60%;
