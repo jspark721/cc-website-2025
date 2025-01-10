@@ -259,6 +259,7 @@ p {
   animation-direction: normal;
   -webkit-animation-name: marquee;
   -webkit-animation-duration: 60s;
+  -webkit-animation-delay: 0s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
 }
