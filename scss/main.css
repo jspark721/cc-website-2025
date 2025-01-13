@@ -2027,6 +2027,8 @@ textarea {
   }
   .dh-hero-badge {
     width: 70px;
+    margin-right: -10px;
+    margin-left: 20px;
   }
   .dh-results-container .services-grid {
     padding: 0 20%;
