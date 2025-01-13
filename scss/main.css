@@ -1945,7 +1945,7 @@ textarea {
     display: none;
   }
   #video-btn {
-    padding: 3px;
+    display: none;
   }
   #play-btn-mobile {
     display: block;
