@@ -16,3 +16,11 @@ function muteUnmute() {
     btn.innerHTML = "unmute <i class='fas fa-volume-up'></i>";
   }
 }
+
+// play video 
+const playButton = document.getElementById("play-btn-mobile");
+
+playButton.addEventListener("click", () => {
+  mobileVideo.play();
+  playButton.remove();
+});
