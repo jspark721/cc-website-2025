@@ -482,11 +482,11 @@ p {
   padding-left: 10%;
 }
 
-.contact-form {
+.contact-form, #wpforms-19 {
   margin-top: -2%;
   width: 35%;
 }
-.contact-form label {
+.contact-form label, #wpforms-19 label {
   color: #00727c;
   font-size: 1.8rem;
   font-family: "Sofia Sans Condensed", serif;
@@ -521,7 +521,7 @@ textarea {
   margin-top: 10px;
 }
 
-[type=submit] {
+[type=submit], #wpforms-submit-19 {
   background: #00727c;
   cursor: pointer;
   color: #fafafa;
@@ -1249,14 +1249,14 @@ textarea {
   .services-grid-item {
     padding: 1.2rem 1.2rem 0 1.2rem;
   }
-  .contact-form label {
+  .contact-form label, #wpforms-19 label {
     font-size: 1.5rem;
   }
   .feedback-input {
     padding: 5px;
     font-size: 1.5rem;
   }
-  [type=submit] {
+  [type=submit], #wpforms-submit-19 {
     font-size: 1.3rem;
     padding: 10px 25px;
   }
@@ -1816,7 +1816,7 @@ textarea {
   .contact-items {
     display: block;
   }
-  .contact-form {
+  .contact-form, #wpforms-19 {
     width: 90%;
     margin-left: 5%;
   }
