@@ -227,7 +227,7 @@ p {
   width: 90%;
   padding: 0 5% 6% 5%;
   border-left: 0 solid transparent;
-  border-radius: 5em;
+  border-radius: 4em;
 }
 
 #video-btn {
@@ -1094,7 +1094,7 @@ textarea {
   margin-bottom: 2%;
 }
 
-@media screen and (min-width: 1550px) {
+@media screen and (min-width: 1450px) {
   #hero-video {
     border-radius: 10em;
   }
@@ -1137,6 +1137,11 @@ textarea {
   }
   .about-ceo-container {
     width: 40%;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .hero-container {
+    margin-top: 2.5%;
   }
 }
 @media screen and (max-width: 1750px) {
@@ -1211,7 +1216,15 @@ textarea {
     height: 600px;
   }
 }
+@media screen and (max-width: 1600px) {
+  .hero-container {
+    margin-top: 3%;
+  }
+}
 @media screen and (max-width: 1500px) {
+  .navbar {
+    height: 85px;
+  }
   h1 {
     font-size: 7rem;
     line-height: 6rem;
@@ -1317,6 +1330,12 @@ textarea {
   }
 }
 @media screen and (max-width: 1290px) {
+  .navbar {
+    height: 80px;
+  }
+  .cc-logo {
+    max-width: 270px;
+  }
   .about-hero-container {
     margin-bottom: 8%;
   }
@@ -1415,6 +1434,11 @@ textarea {
   }
   .ch-results-container .services-grid-item {
     padding: 1rem;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .hero-container {
+    margin-top: 4.5%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1597,16 +1621,24 @@ textarea {
     grid-gap: 1rem;
   }
 }
+@media screen and (max-width: 990px) {
+  .navbar {
+    height: 70px;
+  }
+  .hero-container {
+    margin-top: 4.8%;
+  }
+}
 @media screen and (max-width: 800px) {
   p {
     font-size: 1.1rem;
     line-height: 1.7rem;
   }
-  .navbar {
-    height: 100px;
-  }
   .cc-logo {
-    max-width: 250px;
+    max-width: 230px;
+  }
+  .hero-container {
+    margin-top: 6%;
   }
   .about-hero-text h1 {
     margin-top: 10%;
@@ -1701,6 +1733,12 @@ textarea {
   .menu-line {
     margin-bottom: 6px;
     height: 2px;
+  }
+  .hero-container {
+    margin-top: 8%;
+  }
+  #hero-video {
+    border-radius: 5em;
   }
   .about-hero-container {
     display: block;
@@ -1875,9 +1913,6 @@ textarea {
   }
 }
 @media screen and (max-width: 600px) {
-  .navbar {
-    height: 80px;
-  }
   .cc-logo {
     max-width: 200px;
   }
@@ -1890,7 +1925,7 @@ textarea {
     height: 30px;
   }
   .hero-container {
-    margin-top: 80px;
+    margin-top: 10%;
   }
   .meta-hero-container {
     display: block;
@@ -1938,6 +1973,14 @@ textarea {
   .nav--open {
     width: 100%;
   }
+  .hero-container {
+    margin-top: 73px;
+  }
+  .hero-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #hero-video-mobile {
     display: block;
   }
@@ -1950,8 +1993,6 @@ textarea {
   #play-btn-mobile {
     display: block;
     position: absolute;
-    top: 40%;
-    left: 38%;
     border: 0;
     background: none;
     color: #fafafa;
