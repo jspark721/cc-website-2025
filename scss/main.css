@@ -1094,6 +1094,10 @@ textarea {
   margin-bottom: 2%;
 }
 
+.page-id-657, .page-id-605 {
+  background-color: #ebeef3;
+}
+
 @media screen and (min-width: 1450px) {
   #hero-video {
     border-radius: 10em;
