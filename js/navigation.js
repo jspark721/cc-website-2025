@@ -12,11 +12,12 @@ open.addEventListener('click', function() {
   menu.style.opacity = "1";
 });
 
-contactlink.addEventListener('click'), function() {
-  menu.classList.toggle('close');
-}
-
 close.addEventListener('click', function() {
+  menu.classList.toggle('close');
+});
+
+contactlink.addEventListener('click', function() {
+  console.log('contact-link clicked');
   menu.classList.toggle('close');
 });
 
