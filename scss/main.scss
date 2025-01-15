@@ -471,6 +471,7 @@ p {
 .contact-form, #wpforms-19 {
   margin-top: -2%;
   width: 35%;
+  font-family: $subheading;
   label {
     color: $teal;
     font-size: 1.8rem;
@@ -514,7 +515,21 @@ textarea {
   font-weight: 500;
   border-radius: 10px;
   border: none;
+  font-family: $body;
+  text-transform: uppercase;
 }
+
+#wpforms-confirmation-19 {
+  background: transparent;
+  border: 2px solid $orange;
+  padding: 50px;
+  p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+}
+
 
 #footer {
   position: relative;

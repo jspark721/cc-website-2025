@@ -485,6 +485,7 @@ p {
 .contact-form, #wpforms-19 {
   margin-top: -2%;
   width: 35%;
+  font-family: "Sofia Sans Condensed", serif;
 }
 .contact-form label, #wpforms-19 label {
   color: #00727c;
@@ -531,6 +532,19 @@ textarea {
   font-weight: 500;
   border-radius: 10px;
   border: none;
+  font-family: "Sofia Sans", serif;
+  text-transform: uppercase;
+}
+
+#wpforms-confirmation-19 {
+  background: transparent;
+  border: 2px solid #fe8701;
+  padding: 50px;
+}
+#wpforms-confirmation-19 p {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 #footer {
