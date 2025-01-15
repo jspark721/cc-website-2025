@@ -13,7 +13,7 @@ open.addEventListener('click', function() {
 });
 
 contactlink.addEventListener('click'), function() {
-  menu.classList.add('close');
+  menu.classList.toggle('close');
 }
 
 close.addEventListener('click', function() {
