@@ -82,7 +82,7 @@ p {
 .navbar {
   background-color: #fafafa;
   width: 100vw;
-  height: 100px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -98,7 +98,7 @@ p {
 
 .cc-logo {
   width: 100%;
-  max-width: 300px;
+  max-width: 230px;
 }
 
 .sticky {
@@ -108,7 +108,7 @@ p {
 
 .menubox {
   width: 35px;
-  height: 32px;
+  height: 30px;
   margin-right: 5%;
   display: flex;
   justify-content: center;
@@ -120,7 +120,7 @@ p {
 
 .menu-lines {
   width: 35px;
-  height: 32px;
+  height: 30px;
 }
 
 .top-line {
@@ -207,7 +207,6 @@ p {
 .hero-container {
   position: relative;
   width: 100vw;
-  margin-top: 2%;
 }
 
 .hero-video-container {
@@ -1170,6 +1169,9 @@ textarea {
   }
 }
 @media screen and (min-width: 2500px) {
+  .navbar {
+    height: 100px;
+  }
   #hero-video {
     border-radius: 15em;
   }
@@ -1183,6 +1185,9 @@ textarea {
   }
 }
 @media screen and (max-width: 1950px) {
+  .hero-container {
+    margin-top: 10px;
+  }
   .about-hero-text {
     width: 35%;
   }
@@ -1199,11 +1204,6 @@ textarea {
   }
   .about-ceo-container {
     width: 40%;
-  }
-}
-@media screen and (max-width: 1800px) {
-  .hero-container {
-    margin-top: 2.5%;
   }
 }
 @media screen and (max-width: 1750px) {
@@ -1280,13 +1280,10 @@ textarea {
 }
 @media screen and (max-width: 1600px) {
   .hero-container {
-    margin-top: 3%;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 1500px) {
-  .navbar {
-    height: 85px;
-  }
   h1 {
     font-size: 7rem;
     line-height: 6rem;
@@ -1392,11 +1389,8 @@ textarea {
   }
 }
 @media screen and (max-width: 1290px) {
-  .navbar {
-    height: 80px;
-  }
   .cc-logo {
-    max-width: 270px;
+    max-width: 200px;
   }
   .about-hero-container {
     margin-bottom: 8%;
@@ -1498,12 +1492,21 @@ textarea {
     padding: 1rem;
   }
 }
-@media screen and (max-width: 1180px) {
-  .hero-container {
-    margin-top: 4.5%;
-  }
-}
 @media screen and (max-width: 1024px) {
+  .navbar {
+    height: 55px;
+  }
+  .cc-logo {
+    max-width: 150px;
+  }
+  .menubox, .menu-lines {
+    height: 25px;
+    width: 25px;
+  }
+  .menu-line {
+    margin-bottom: 5px;
+    height: 2px;
+  }
   #about-page h5 {
     font-size: 1.7rem;
     margin: 0 0 0 0.5rem;
@@ -1683,24 +1686,16 @@ textarea {
     grid-gap: 1rem;
   }
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 800px) {
   .navbar {
-    height: 70px;
+    height: 50px;
   }
   .hero-container {
-    margin-top: 4.8%;
+    margin-top: 25px;
   }
-}
-@media screen and (max-width: 800px) {
   p {
     font-size: 1.1rem;
     line-height: 1.7rem;
-  }
-  .cc-logo {
-    max-width: 230px;
-  }
-  .hero-container {
-    margin-top: 6%;
   }
   .about-hero-text h1 {
     margin-top: 10%;
@@ -1785,20 +1780,6 @@ textarea {
   }
 }
 @media screen and (max-width: 650px) {
-  .menu-lines {
-    width: 35px;
-    height: 35px;
-  }
-  .top-line {
-    margin-top: 4px;
-  }
-  .menu-line {
-    margin-bottom: 6px;
-    height: 2px;
-  }
-  .hero-container {
-    margin-top: 8%;
-  }
   #hero-video {
     border-radius: 5em;
   }
@@ -1975,19 +1956,19 @@ textarea {
   }
 }
 @media screen and (max-width: 600px) {
+  .navbar {
+    height: 40px;
+  }
+  .menubox, .menu-lines {
+    height: 20px;
+    width: 25px;
+  }
+  .menu-line {
+    margin-bottom: 4px;
+    height: 1.8px;
+  }
   .cc-logo {
-    max-width: 200px;
-  }
-  .menubox {
-    width: 35px;
-    height: 35px;
-  }
-  .menu-lines {
-    width: 30px;
-    height: 30px;
-  }
-  .hero-container {
-    margin-top: 10%;
+    max-width: 120px;
   }
   .meta-hero-container {
     display: block;
@@ -2036,7 +2017,7 @@ textarea {
     width: 100%;
   }
   .hero-container {
-    margin-top: 73px;
+    margin-top: 45px;
   }
   .hero-video-container {
     display: flex;
