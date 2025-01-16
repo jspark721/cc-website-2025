@@ -2168,8 +2168,8 @@ textarea {
     }
   }
   .ticker p {
-    font-size: 1.3rem;
-    margin: 0.3rem 0 0rem 0;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
   }
   .work-title-mobile {
     padding-right: 5%;
@@ -2333,9 +2333,10 @@ textarea {
   .about-ceo-container {
     column-gap: 1rem;
   }
-  #about-page h5 {
+  .coop-name {
     font-size: 1.2rem;
     line-height: 1rem;
+    margin: 0.5rem 0 0 0.5rem;
   }
   .about-p {
     font-size: .9rem;
