@@ -707,6 +707,9 @@ textarea {
 }
 
 // DEAR HOLLYWOOD 
+.page-id-607 {
+  background-color: #eaeaec;
+}
 
 .dh-hero-container {
   position: relative;
@@ -1089,6 +1092,46 @@ textarea {
 
 .page-id-657, .page-id-605 {
   background-color: #ebeef3;
+}
+
+//404 page
+
+.page-404-container {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $heading;
+  h1 {
+    font-size: 9rem;
+    color: $orange;
+  }
+  h2 {
+    font-size: 3rem;
+    margin: 0;
+    color: $blue;
+  }
+}
+.btn-primary {
+  border: 1px solid #000000;
+  outline: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: $body;
+  text-transform: uppercase;
+  padding: 15px;
+  margin: 15% 0;
+  border-radius: 15px;
+  &:hover {
+    background: $teal;
+    transition: $ease;
+    color: $white;
+    cursor: pointer;
+    border: 1px solid $teal;
+  }
 }
 
 // LARGE DESKTOP
