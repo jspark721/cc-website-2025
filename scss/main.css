@@ -422,6 +422,14 @@ p {
   color: #00727c;
 }
 
+.client-logo {
+  max-width: 180px;
+}
+
+.logo-sq {
+  max-width: 120px;
+}
+
 .services-container {
   position: relative;
   width: 100vw;
@@ -758,8 +766,8 @@ textarea {
 
 .dh-hero-title {
   color: #00727c;
-  font-size: 11rem;
-  line-height: 10rem;
+  font-size: 10rem;
+  line-height: 9rem;
 }
 
 .dh-hero-body {
@@ -935,7 +943,7 @@ textarea {
   background-color: #ebeef3;
   display: flex;
   align-items: center;
-  margin: 100px auto 0 auto;
+  margin: 80px auto 0 auto;
   max-width: 1800px;
 }
 
@@ -946,16 +954,16 @@ textarea {
 
 .meta-hero-img {
   padding: 5%;
+  height: 85vh;
   max-height: 1000px;
 }
 
 .meta-hero-text-container {
   width: 50%;
-  margin-left: 5%;
 }
 
 .meta-logo-title {
-  max-width: 450px;
+  max-width: 425px;
   margin-bottom: 2rem;
 }
 
@@ -973,13 +981,14 @@ textarea {
   padding: 3% 5%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .meta-creative-desc {
   border: 2px solid #00727c;
   border-radius: 35px;
   text-align: center;
-  padding: 0.5rem 10%;
+  padding: 0.5rem 5%;
   margin-left: 10%;
 }
 
@@ -987,7 +996,7 @@ textarea {
   border: 2px solid #3b39ff;
   border-radius: 35px;
   text-align: center;
-  padding: 0.5rem 8%;
+  padding: 0.5rem 5%;
   margin-left: 5%;
 }
 
@@ -1041,6 +1050,7 @@ textarea {
   padding-top: 8%;
   max-height: 1200px;
   margin-bottom: -6px;
+  height: 90vh;
 }
 
 .ch-hero-img-mobile {
@@ -1049,8 +1059,8 @@ textarea {
 
 .ch-hero-title {
   color: #3b39ff;
-  font-size: 11rem;
-  line-height: 10rem;
+  font-size: 10rem;
+  line-height: 9rem;
 }
 
 .ch-content-container {
@@ -1238,10 +1248,10 @@ textarea {
     grid-row-gap: 6rem;
   }
   .client-logo {
-    max-width: 180px;
+    max-width: 160px;
   }
   .logo-sq {
-    max-width: 120px;
+    max-width: 100px;
   }
   .contact-container {
     margin-bottom: 5%;
@@ -1281,6 +1291,9 @@ textarea {
 @media screen and (max-width: 1600px) {
   .hero-container {
     margin-top: 20px;
+  }
+  .meta-creative-desc, .meta-production-desc {
+    padding: 1%;
   }
 }
 @media screen and (max-width: 1500px) {
@@ -1387,10 +1400,31 @@ textarea {
   .ch-results-container .services-grid-item h1 {
     font-size: 6rem;
   }
+  .meta-hero-text-container {
+    margin-right: 5%;
+  }
+  .meta-logo-title {
+    max-width: 380px;
+  }
+}
+@media screen and (max-width: 1355px) {
+  .meta-production-desc {
+    margin-left: 1%;
+  }
+  .meta-creative-title h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
 }
 @media screen and (max-width: 1290px) {
   .cc-logo {
     max-width: 200px;
+  }
+  .client-logo {
+    max-width: 140px;
+  }
+  .logo-sq {
+    max-width: 80px;
   }
   .about-hero-container {
     margin-bottom: 8%;
@@ -1463,7 +1497,7 @@ textarea {
     padding: 5% 0;
   }
   .meta-logo-title {
-    max-width: 380px;
+    max-width: 340px;
   }
   .meta-creative-grid {
     grid-gap: 3rem;
@@ -1972,6 +2006,7 @@ textarea {
   }
   .meta-hero-container {
     display: block;
+    margin-top: 50px;
   }
   .meta-hero-image {
     text-align: center;
