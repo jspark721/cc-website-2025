@@ -1,0 +1,34 @@
+//fonts
+@import url('https://use.typekit.net/rmf2opm.css');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+
+
+$heading:  "Sofia Sans Extra Condensed", sans-serif;
+$subheading:  "Sofia Sans Condensed", serif;
+$body: "Sofia Sans", serif;
+
+
+
+//colors
+
+$orange: #fe8701;
+$teal: #00727c;
+$blue: #3b39ff;
+$black: #000000;
+$light: #ebeef3;
+$white: #fafafa;
+
+
+//transition
+$ease: all 0.3s ease;
+$ease-out: all 0.3s ease-out;
+$ease-slow: all 0.5s ease-out;
+$ease-slower: all 0.7s ease-out;
